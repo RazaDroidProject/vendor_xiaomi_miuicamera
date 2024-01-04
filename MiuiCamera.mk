@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Native libraries
+PRODUCT_PACKAGES += \
+    libcamera_algoup_jni.xiaomi
+
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
     MiuiCamera
@@ -23,9 +27,11 @@ endif
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.android.camera \
     ro.com.google.lens.oem_camera_package=com.android.camera \
+    ro.vendor.audio.us.proximity=true \
     ro.miui.build.region=in \
     ro.miui.notch=1 \
     ro.product.mod_device=_global \
+    ro.vendor.display.type=lcd \
     vendor.camera.aux.packagelist=com.android.camera
 
 # Soong
